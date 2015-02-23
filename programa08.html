@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Estrutura de controle</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Entendendo o IF</h1>
+	<script type="text/javascript">
+		function calculaIMC() {
+			/*A função prompt captura a entrada de dados do teclado do usuário*/
+			//A função parseInt converte uma string para inteiro.
+			var peso = parseInt(prompt("Informe seu peso"));
+			var altura = parseInt(prompt("Informe sua altura"));	
+			var imc = peso / (altura * altura);
+			if (imc < 18) {
+			document.write("Seu IMC é: " + imc + "<br>");
+			document.write("Cuidado, seu status é: Magreza.");
+			}
+		}
+		//Chama a função para a realização do cálculo.
+		calculaIMC();
+	</script>
+</body>
+</html>
